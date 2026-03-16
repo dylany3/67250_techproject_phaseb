@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="./static/script.js" defer></script>
+  <script src="../static/script.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Dylan Yang" />
@@ -19,7 +19,7 @@
     rel="stylesheet"
   />
 </head>
-<body>
+<body onload="addYear()">
   <header>
     <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
     <nav>
@@ -62,7 +62,8 @@
     </table>
   </div>
   <footer>
-    <p>&copy; 2026 MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
+    <p>&copy;MonoMuse. All rights reserved.</p>
   </footer>
 </body>
 </html>
