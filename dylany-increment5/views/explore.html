@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dylan Yang" />
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems" />
+    <meta name="description" content="MonoMuse website redesign project" />
+    <title>Explore - MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="addYear()">
+    <header>
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo" />
+      <nav id="navbar">
+        <a href="../index.html">Home</a>
+        <a id="navselected" href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">&#9776;</a>
+      </nav>
+    </header>
+
+    <div class="main">
+      <h2>Explore MonoMuse</h2>
+      <img
+        src="../static/monomuse.png"
+        alt="Image of MonoMuse Museum"
+        style="width: 100%; max-width: 600px"
+      />
+      <p>
+        At MonoMuse, we are dedicated to fostering a deeper understanding and
+        appreciation of the intersection between art, technology, and human
+        creativity. Our mission is to inspire curiosity and creativity through
+        immersive exhibitions, interactive installations, and educational
+        programs that explore how digital innovation is transforming the way we
+        create, experience, and understand art.
+      </p>
+      <ul>
+        <li>
+          <strong>Who We Serve:</strong> We welcome visitors of all ages and
+          backgrounds, including art enthusiasts, technology lovers, students,
+          educators, and families. Our exhibitions and programs are designed to
+          engage a diverse audience and provide meaningful experiences for
+          everyone.
+        </li>
+        <li>
+          <strong>Founding Year:</strong> MonoMuse was founded in 2020 with the
+          vision of creating a space where art and technology converge to
+          inspire creativity and innovation.
+        </li>
+        <li>
+          <strong>Milestones:</strong> Since our founding, we have hosted over
+          20 exhibitions, welcomed more than 100,000 visitors, and collaborated
+          with artists and technologists from around the world to create
+          groundbreaking installations that challenge traditional notions of
+          art.
+        </li>
+      </ul>
+
+      <h3>Find Us</h3>
+      <div id="map"></div>
+
+    </div>
+
+    <footer>
+      <p id="copyYear"></p>
+      <p>&copy; MonoMuse. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
